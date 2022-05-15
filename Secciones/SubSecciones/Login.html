@@ -8,46 +8,52 @@
 	<title>Entregable Responsive</title>
 </head>
 <body>
-	<div id="header" class="encabezadoContainer">
-		<p>LOGO.PNG</p>
-			<div id="main-menu">
-	  <ul>
-	    <li><a href="../noticias.html">Home</a></li>
-	    <li><a href="../exponentes.html">Escritores</a></li>
-	    <li><a href="../crews.html">Crews</a></li>
-	    <li><a href="../eventos.html">Eventos</a></li>
-	    <li><a href="../contacto.html">Mi Perfil</a></li>
-	  </ul>
-	</div>
-	<input type="checkbox" id="hamburger-input" class="burgerShower" />
-	<label id="hamburger-menu" for="hamburger-input">
-	  <div id="sidebar-menu">
-	    <h3>Menu</h3>
-	    <ul>
+		<div id="header" class="encabezadoContainer">
+		  <div class="logo">
+		    	<p>LOGO.PNG</p>
+		  </div>
+		<div id="main-menu">	
+		  <ul>
 		    <li><a href="../noticias.html">Home</a></li>
 		    <li><a href="../exponentes.html">Escritores</a></li>
 		    <li><a href="../crews.html">Crews</a></li>
 		    <li><a href="../eventos.html">Eventos</a></li>
 		    <li><a href="../contacto.html">Mi Perfil</a></li>
-	    </ul>
-	  </div>
-	</label>
-	</div>
-	<ul>
-			<li>
-				<a href="../subsecciones/signup.html">Sign Up</a>
-			</li>
-			<li>
-				<a href="../subsecciones/login.html">Log In</a>
-			</li>
-	</ul>
-	<form action="formulario.html" method="POST">
-		<input type="text" name="email" placeholder="E-mail">
-		<input type="password" name="contra" placeholder="Contraseña">
-		<input type="submit" name="enviar" value="enviar">
-	</form>
-	<div id="footer">
-		<p>Ejeplo de footer</p>		
-	</div>
+		  </ul>
+		</div>
+		<input type="checkbox" id="hamburger-input" class="burgerShower" />
+		<label id="hamburger-menu" for="hamburger-input">
+		  <div id="sidebar-menu">
+		    <h3>Menu</h3>
+		    <ul>
+			    <li><a href="../noticias.html">Home</a></li>
+			    <li><a href="../exponentes.html">Escritores</a></li>
+			    <li><a href="../crews.html">Crews</a></li>
+			    <li><a href="../eventos.html">Eventos</a></li>
+			    <li><a href="../contacto.html">Mi Perfil</a></li>
+		    </ul>
+		  </div>
+		</label>
+		</div>
+		<ul>
+				<li>
+					<a href="../subsecciones/signup.html">Sign Up</a>
+				</li>
+				<li>
+					<a href="../subsecciones/login.html">Log In</a>
+				</li>
+		</ul>
+			<form action="formulario.html" method="POST">
+				<div class="form">
+					<label for="email">E-mail</label>
+					<input type="text" name="email" id="email" placeholder="ejemplo@dominio.com">
+					<label for="contraseña">Contraseña</label>
+					<input type="password" id="contraseña" name="contra" placeholder="****">
+					<input type="submit" class="btn" name="enviar" value="enviar">
+				</div>
+			</form>
+		<div id="footer">
+			<p>Ejeplo de footer</p>		
+		</div>
 </body>
 </html>

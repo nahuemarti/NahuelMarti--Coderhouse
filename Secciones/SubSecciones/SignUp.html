@@ -9,8 +9,10 @@
 </head>
 <body>
 	<div id="header" class="encabezadoContainer">
-		<p>LOGO.PNG</p>
-			<div id="main-menu">
+		<div class="logo">
+			<p>LOGO.PNG</p>
+		</div>	
+	<div id="main-menu">
 	  <ul>
 	    <li><a href="../noticias.html">Home</a></li>
 	    <li><a href="../exponentes.html">Escritores</a></li>
@@ -42,21 +44,26 @@
 			</li>
 	</ul>
 	<form action="formulario.html" method="POST" enctype="multipart/form-data">
-		<input type="text" name="tag" placeholder="Nombre/Tag">
-		<input type="text" name="email" placeholder="E-mail">
-		<input type="password" name="contra" placeholder="Contraseña">
-		<select name="tipousr">
+		<div class="form">
+		<label for="tag">Nombre / Tag</label>
+		<input type="text" id="tag" name="tag" placeholder="Nombre/Tag">
+		<label for="email">E-mail</label>
+		<input type="text" id="email" name="email" placeholder="ejemplo@dominio.com">
+		<label for="contra">Contraseña</label>
+		<input type="password" id="contra" name="contra" placeholder="****">
+		<label for="tipoUsr">Tipo de Usuario</label>
+		<select name="tipoUsr" id="tipoUsr">
 			<option>Artista</option>
 			<option>Spotter</option>
 		</select>
 		<label for="notif">Recibir recordatorio de futuros eventos</label>
 		<input type="checkbox" name="notif" id="notif" value="notif">
 		<label for="d">Descripción</label>
-		<textarea name="descripción" id="d">	
-		</textarea>
+		<textarea name="descripción" id="d" placeholder=""></textarea>
 		<label for="p">Foto de Perfil</label>
 		<input type="file" id="p" name="perfil" accept="image/png, .jpeg, .jpg, image/gif">
-		<input type="submit" name="ingresar" value="Ingresar">
+		<input type="submit" class="btn" name="ingresar" value="Ingresar">
+		</div>
 	</form>
 	<div id="footer">
 		<p>Ejeplo de footer</p>		
